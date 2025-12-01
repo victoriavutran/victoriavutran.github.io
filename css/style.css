@@ -1,0 +1,523 @@
+body{
+    background-color: #1D2029;
+}
+
+* {
+    cursor: url('../images/portfolioMeoPaw.png') 10 10, auto !important;
+    font-family: monospace !important;
+}
+
+i {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+/* home page starts here */
+header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+header .homerect{
+    background-color: #272B37;
+    color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .projectrect{
+    background-color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #272B37;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .aboutrect{
+    background-color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #272B37;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .contactrect{
+    background-color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #272B37;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .mychildrect{
+    background-color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #272B37;
+    border: none;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* hover over buttons*/
+header .projectrect:hover{
+    background-color: #272B37;
+    color: #FFEB3B;
+    cursor: pointer;
+}
+
+header .aboutrect:hover{
+    background-color: #272B37;
+    color: #FFEB3B;
+    cursor: pointer;
+}
+
+header .contactrect:hover{
+    background-color: #272B37;
+    color: #FFEB3B;
+    cursor: pointer;
+}
+
+header .mychildrect:hover{
+    background-color: #272B37;
+    color: #FFEB3B;
+    cursor: pointer;
+}
+
+/* body start */
+.homeparagraph{
+    color: azure;
+    font-size: 18px;
+    text-align: center;
+}
+
+.homesquare{
+    background-color: #272B37;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 910px;
+    height: 650px;
+}
+
+.homesquare1{
+    background-color: #272B37;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 910px;
+    height: 650px;
+}
+
+.homeheartinvisible {
+    display: none;
+}
+
+.pixelmeo img{
+    image-rendering: pixelated;
+    width: 350px;
+    height: auto;
+    position: relative;
+    bottom: 60px;
+    padding-right: 28px;
+}
+
+/* about page */
+header .yellowhomerect{
+    color: #272B37;
+    background-color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    border: none;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .yellowhomerect:hover{
+    background-color: #272B37;
+    color: #FFEB3B;
+    cursor: pointer;
+}
+
+header .darkaboutrect{
+    background-color: #272B37;
+    color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    border: none;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutsquare{
+    background-color: #272B37;
+    font-size: 16px;
+    color: azure;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px;
+    width: 910px;
+    height: 650px;
+}
+
+.professionalphoto img{
+    width: 180px;
+    height: 235px;
+    float: right;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+/* projects design page */
+header .darkprojectrect{
+    background-color: #272B37;
+    color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    border: none;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* dropdown for projects*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.darkdropbtn {
+    background-color: #272B37;
+    color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    border: none;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropbtn {
+    background-color: #FFEB3B;
+    color: #272B37;
+    width: 170px;
+    height: 40px;
+    border: none;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdowncontent {
+  color: #272B37;
+  font-size: 14px;
+  display: none;
+  position: absolute;
+  background-color: #FFEB3B;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  font-family:  Arial, Helvetica, sans-serif;
+}
+
+.dropdowncontent a {
+  color: #272B37;
+  font-size: 14px;
+  background-color: #FFEB3B;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family:  Arial, Helvetica, sans-serif;
+}
+
+.dropdowncontent a:hover {
+  background-color: #1F222C;
+  color: #FFEB3B;
+}
+
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #1F222C;
+  color: #FFEB3B;
+}
+
+/* contact page */
+header .darkcontactrect{
+    background-color: #272B37;
+    color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    border: none;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.smallsquare{
+    background-color: #272B37;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 910px;
+    height: 80px;
+    margin-bottom: 25px;
+}
+
+.contactcontainer {
+  display: flex;
+  justify-content: center;   
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* my child page */
+header .darkmychildrect{
+    background-color: #272B37;
+    color: #FFEB3B;
+    width: 170px;
+    height: 40px;
+    border: none;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images1 img{
+    width: 200px;
+    height: 250px;
+}
+
+.images2 img{
+    width: 200px;
+    height: 250px;
+}
+
+/* contact */
+.pixelmeo2 img{
+    image-rendering: pixelated;
+    width: 350px;
+    height: auto;
+    position: relative;
+    top: 10px;
+    padding-right: 22px;
+}
+
+.email a{
+  color: white;
+}
+
+.pixelheart img{
+    image-rendering: pixelated;
+    width: 180px;
+    padding-top: 15px;
+}
+
+.mychildsquare{
+    color: azure;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+}
+
+/* project 1 style */
+.p1homesquare{
+    background-color: #272B37;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 910px;
+    min-height: 3050px;
+    text-align: left;
+}
+
+.p1homeparagraph{
+    color: azure;
+    font-size: 18px;
+}
+
+.p1homesquare h4 {
+    color: #FFEB3B;
+    height: auto;
+    transition: all 0.4s ease;
+}
+
+.aboutsquare h4 {
+    color: #FFEB3B;
+}
+
+.TCLogo img{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+.CTR img{
+    width: 450px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.Interactions img{
+    width: 450px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.Duration img{
+    width: 450px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.LinearRegression img{
+    width: 550px;
+    height: 350px;
+    margin: auto;
+    display: block;
+}
+
+.UI img{
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    display: block;
+}
+
+.expandable h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #FFEB3B;
+}
+
+.expand-btn {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FFEB3B;
+}
+
+.expand-btn:focus {
+    outline: none;
+}
+
+.content {
+    padding-left: 1em;
+    font-size: 14px;
+}
+/* project 3 style */
+.p3homesquare{
+    background-color: #272B37;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 910px;
+    text-align: left;
+    height: auto;
+    transition: height 0.3s ease;
+    overflow: hidden;
+}
+
+.p3homeparagraph{
+    color: azure;
+    font-size: 18px;
+}
+
+.p3homesquare h4 {
+    color: #FFEB3B;
+}
+
+.AlwaysFreshLogo img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+iframe {
+    margin: 0 auto;
+    background-color: #777;
+    display: block;
+}
+
+.SQL img {
+    width: 550px;
+    height: auto;
+}
+
+.report img {
+    width: 800px;
+    height: auto;
+}
+
+.python img {
+    width: 400px;
+    height: auto;
+}
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Redesign Impact with A/B Testing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/lucida-console" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="homeparagraph">
+
+    <header>
+        <a href="index.html" class="yellowhomerect">home</a>
+        
+        <div class="dropdown">
+            <button class="darkdropbtn">projects</button>
+            <div class="dropdowncontent">
+                <a href="project3.html">SQL Sales Analytics</a>
+                <a href="project1.html">UI Redesign Impact with A/B Testing</a>
+            </div>
+        </div>
+
+        <a href="about.html" class="aboutrect">about</a>
+        <a href="contact.html" class="contactrect">contact</a>
+        <a href="mychild.html" class="mychildrect">my child</a>
+    </header>
+
+    <div class="p1homesquare">
+
+        <div class="TCLogo">
+            <img src="images/TCLogo.jpg" alt="TC logo">
+        </div>
+
+        <h4>Client Background</h4>
+        <p>T/C is a Canada-based app company specializing in trendy clothing and accessories for a global audience. Founded in 2024, the company has rapidly scaled, now serving nearly 100,000 customers with over 158,000 transactions and generating more than $30 million in revenue.</p>
+
+        <h4>Business Focus</h4>
+        <p>To maintain a competitive edge and enhance customer engagement, T/C undertook a user interface (UI) redesign. Reporting to the Head of Operations, a comprehensive A/B testing analysis was done to evaluate the performance of the new UI relative to the existing version, providing actionable insights to inform product and design stakeholders.</p>
+
+        <div class="UI">
+            <img src="images/UI.jpg" alt="UI comparisons">
+        </div>
+
+        <h4>Click-Through Rate (CTR)</h4>
+        <p>CTR shows how many people not only see the ads but actually click into the app, turning interest into action. CTR is a key metric because it helps T/C understand if their ads are truly capturing attention and sparking curiosity. A higher CTR means the audience is interested, and T/C's marketing is effective at driving people to explore the product.</p>
+
+        <div class="CTR">
+            <img src="images/CTR.jpg" alt="CTR graph">
+        </div>
+
+        <ul>
+            <li>CTR increased from 9.23% to 12.31% (33% increase).</li>
+            <li>Higher ad engagement and stronger first-touch appeal.</li>
+            <li>New UI design more effectively captures attention.</li>
+        </ul>
+
+        <h4>Interactions</h4>
+        <p>Average searches per session indicate how actively users explore and discover content within the app. This metric helps reveal curiosity, intent to find value, and overall engagement beyond just opening the app. Higher search activity suggests deeper interest and a stronger drive to interact with available features and content.</p>
+
+        <div class="Interactions">
+            <img src="images/Interactions.jpg" alt="Interactions graph">
+        </div>
+
+        <ul>
+            <li>Searches per user rose from 0.84 to 1.24 (47.6% increase).</li>
+            <li>Users explored more products with improved navigation.</li>
+            <li>Enhanced search visibility encouraged deeper browsing.</li>
+        </ul>
+
+        <h4>Session Duration</h4>
+        <p>Average session duration shows how long users stay active in the app and serves as a signal of engagement quality and content relevance. Longer sessions suggest users are finding value, staying interested, and interacting meaningfully with what the app offers.</p>
+
+        <div class="Duration">
+            <img src="images/Durations.jpg" alt="Duration graph">
+        </div>
+
+        <ul>
+            <li>Average time increased from 58.90s to 92.38s (57% increase).</li>
+            <li>New UI kept users engaged longer.</li>
+            <li>Smoother flow and clearer visual hierarchy improved usability.</li>
+        </ul>
+
+        <h4>Future Clicking Prediction</h4>
+        <div class="LinearRegression">
+            <img src="images/LinearRegression.jpg" alt="Prediction of future clicks by linear regression">
+        </div>
+
+        <p>The results clearly favor the new UI. Assuming this sample reflects the app's users, the new interface is expected to generate significantly higher engagement with approximately 4.2 additional clicks per user compared to the old UI. For example, if the old UI produced 200 total clicks, the new UI would be projected to deliver around 620 clicks. This indicates a substantial improvement in user exploration and overall performance.</p>
+
+        <h4>Report Summary</h4>
+        <p>Across every key metric, the redesigned interface outperformed the previous layout. The data strongly supports adopting the new UI as the primary experience, with results indicating higher user curiosity, longer browsing time, and stronger conversion potential.</p>
+
+        <p>If the new UI were to be rolled out today, the new UI would likely accelerate engagement growth and strengthen acquisition efficiency. Keeping the old interface would mean missing out on measurable interaction gains and potential revenue lift.</p>
+
+        <!-- Expandable Section -->
+        <div class="expandable">
+            <h4>
+                Technical Details
+                <button class="expand-btn" onclick="toggleContent(this)">+</button>
+            </h4>
+            <div class="content" style="display:none;">
+                <h4>Data:</h4>
+                <p>Data was generated by creating random numbers from known statistical distributions. Before this, systematic sampling was performed within the company to test different UI versions. Using Python, a sample was drawn from 500 employees. A starting point and the number of employees skipped were determined using the formula: number of employees divided by the number of samples needed (employees / samples_needed). The dataset included the following columns:</p>
+                <h4>Statistical Model:</h4>
+                <p>To predict the future number of clicks for the app, a suitable model was required. Assumptions of independence and normality were first assessed. The data is independent because employees' clicking behavior does not influence one another. Normality was checked using a normal Q-Q plot, and the points did not align with the 45-degree reference line, indicating the normality assumption was not met. Initially, a linear regression model was considered, but due to the lack of normality, it was not appropriate. Instead, a Mann-Whitney U test was used to model the data, as it requires independence but does not assume normality. The analysis indicated that the new UI is expected to increase engagement by approximately 4.2 clicks per user.</p>
+            </div>
+
+        <div class="expandable">
+            <h4>
+                Code Snippets
+                <button class="expand-btn" onclick="toggleContent(this)">+</button>
+            </h4>
+            <div class="content" style="display:none;">
+                <div class="SQL">
+                <p> Python was utilized via Jupyter Notebook for this project. The main libraries pandas, NumPy, and matplotlib were used to wrangle and model the data. </p><br>
+                <p>Systematic Sampling:</p>
+                <img src="images/Sample.jpg"><br>                
+                <p>Data Creation:</p>
+                <img src="images/DataCreation.jpg"><br>               
+                <p>CTR:</p>
+                <img src="images/CTRPython.jpg"><br>
+                <p>Search Interation:</p>
+                <img src="images/Interact.jpg"><br>
+                <p>Average Time Spent on T/C App:</p>
+                <img src="images/AvgTime.jpg"><vr></br>
+                <p>Q-Q Plot:</p>
+                <img src="images/QQ.jpg"><br>
+                <p>Mann-Whitney U Test:</p>
+                <img src="images/MannWhitney.jpg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleContent(button) {
+            const content = button.closest('.expandable').querySelector('.content');
+            const box = document.querySelector('.p1homesquare');
+
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                button.textContent = "–";
+
+                const newHeight = box.scrollHeight + content.scrollHeight - 300; 
+            } else {
+                content.style.display = "none";
+                button.textContent = "+";
+            }
+        }
+    </script>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

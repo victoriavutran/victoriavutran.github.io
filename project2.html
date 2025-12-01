@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/lucida-console" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="homeparagraph">
+
+    <header>
+        <a href="index.html" class="yellowhomerect"> home </a>
+        
+        <div class="dropdown">
+            <button class="darkdropbtn"> projects </button>
+            <div class="dropdowncontent">
+                <a href="project3.html"> SQL Sales Analytics </a>
+                <a href="project2.html"> Customer Sentiment Dashboard </a>
+                <a href="project1.html"> UI Redesign Impact with A/B Testing </a>
+            </div>
+        </div>
+
+        <a href="about.html" class="aboutrect"> about </a>
+        <a href="contact.html" class="contactrect"> contact </a>
+        <a href="mychild.html" class="mychildrect"> my child </a>
+    </header>
+
+    <div class="p2homeparagraph">
+        <div class = "p2homesquare">
+        <h4> Background </h4>
+        <p>This project focused on analyzing customer feedback for a popular pet product sold on Amazon. With over 10,000 units sold and 2,071 customer reviews collected, the goal was to uncover insights into customer sentiment and product perception. By scraping and analyzing these reviews, a comprehensive dashboard was created to help stakeholders understand what customers value most and identify areas for improvement, enabling data-driven decisions for marketing and product strategy.</p>
+        
+        <!-- Expandable Section -->
+        <div class="expandable">
+            <h4>
+                KPIs
+                <button class="expand-btn" onclick="toggleContent(this)">+</button>
+            </h4>
+            <div class="content" style="display:none;">
+                <ul> 
+                    <li> Total Reviews: shows the volume of customer feedback and overall engagement with the product. </li><br>
+                    <li> Average rating: indicates the general customer satisfaction at a glance.</li><br>
+                </ul>
+            </div>
+
+            <h4>
+                Data Citation
+                <button class="expand-btn" onclick="toggleContent(this)">+</button>
+            </h4>
+            <div class="content" style="display:none;">
+                <p> Hou, Yupeng, Li, Jiacheng, He, Zhankui, Yan, An, Chen, Xiusi, & McAuley, Julian. (2024). 
+                <strong>Bridging Language and Items for Retrieval and Recommendation.</strong> 
+                <em>arXiv preprint arXiv:2403.03952.</em>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function toggleContent(button) {
+            const contentDiv = button.parentElement.nextElementSibling;
+            if (contentDiv.style.display === "none") {
+                contentDiv.style.display = "block";
+                button.textContent = "-";
+            } else {
+                contentDiv.style.display = "none";
+                button.textContent = "+";
+            }
+        }
+    </script>
+
+        </div>
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>

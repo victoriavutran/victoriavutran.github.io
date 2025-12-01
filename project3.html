@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.cdnfonts.com/css/lucida-console" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="homeparagraph">
+
+    <header>
+        <a href="index.html" class="yellowhomerect"> home </a>
+        
+        <div class="dropdown">
+            <button class="darkdropbtn"> projects </button>
+            <div class="dropdowncontent">
+                <a href="project3.html"> SQL Sales Analytics </a>
+                <a href="project1.html"> UI Redesign Impact with A/B Testing </a>
+            </div>
+        </div>
+
+        <a href="about.html" class="aboutrect"> about </a>
+        <a href="contact.html" class="contactrect"> contact </a>
+        <a href="mychild.html" class="mychildrect"> my child </a>
+    </header>
+
+    <div class="p3homeparagraph">
+        <div class = "p3homesquare">
+            <h4>Background</h4>
+            <p>The Director of Business Intelligence at AlwaysFresh provided access to the company’s transactional database and requested a dashboard of KPIs, a Customer Report, and a Product Report to better understand customer spending behaviour and product performance.</p>
+            <h4>Product & Customer Dashboard </h4>
+
+            <iframe width="800" height="600" src="https://lookerstudio.google.com/embed/reporting/83934069-5add-48d2-b455-5b07c9381c53/page/p_flblvasgyd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+            <br>
+
+        <!-- Expandable Section -->
+            <div class="expandable">
+                <h4>
+                    Customer Report
+                    <button class="expand-btn" onclick="toggleContent(this)">+</button>
+                </h4>
+                <div class="content" style="display:none;">
+                    <p>Displayed below are the first 10 columns of the customer report.</p>
+                    
+                    <div class="report">
+                        <img src="images/CustomerReport.jpg" alt="Customer Report">
+                    </div>                    
+                    
+                    <p> Report Creation SQL Query: </p>
+                    <div class="SQL">
+                        <img src="images/CustomerReportSQLCode.jpg" alt="Customer Report Code">
+                    </div>
+                </div>
+    
+                 <div class="expandable">
+                    <h4>
+                        Product Report
+                        <button class="expand-btn" onclick="toggleContent(this)">+</button>
+                    </h4>
+                    <div class="content" style="display:none;">
+                        <p> Displayed below are the first 10 columns of the product report.</p>
+                        
+                        <div class="report">
+                            <img src="images/ProductReport.jpg" alt="Product Report">
+                        </div>
+
+                        <p> Report Creation SQL Query: </p>
+                        <div class="SQL">
+                            <img src="images/ProductReportSQLCode.jpg" alt="Product Report Code">
+                        </div>
+                    </div>
+
+        <div class="expandable">
+            <h4>
+                Data
+                <button class="expand-btn" onclick="toggleContent(this)">+</button>
+            </h4>
+            <div class="content" style="display:none;">
+                <p>The dataset contained 12,575 rows with several missing values across 11 columns:</p>
+                <ul>
+                <li>Transaction ID - String</li><br>  
+                <li>Customer ID - String</li><br>  
+                <li>Category - String</li><br>  
+                <li>Item - String</li><br>  
+                <li>Price Per Unit - Decimal</li><br>  
+                <li>Quantity - Integer</li><br>  
+                <li>Total Spent - Decimal</li><br>  
+                <li>Payment Method - String</li><br>  
+                <li>Location - String</li><br>  
+                <li>Transaction Date - Date</li><br>  
+                <li>Discount Applied - Boolean</li><br>  
+                </ul>
+                <p>Python libraries pandas, numpy, and matplotlib were used to clean and validate the data.</p>
+            </div>
+    
+
+            <div class="expandable">
+                <h4>
+                    Data Wrangling
+                    <button class="expand-btn" onclick="toggleContent(this)">+</button>
+                </h4>
+                <div class="content" style="display:none;">
+                    <p>Before solving for null values, the column Total Spent was validated with expression (Price Per Unit)(Quantity).</p>
+                   
+                    <div class="python">
+                        <img src="images/ValidatePython.jpg">
+                    </div>       
+                    <br>
+                    <h4> Solve for Column Price Per Unit:</h4>
+                    <p>Price Per Unit = Total Spent / Quantity knowing that Total Spent = (Price Per Unit)(Quantity).</p>
+                    
+                    <div class="python">
+                        <img src="images/PricePerUnitPython.jpg">
+                    </div> 
+                    <br>
+                    <h4> Solve for Column Discount Applied:</h4>
+                    <p>A lookup dictionary containing each item’s regular (non-discounted) unit price was created. If the calculated price per unit was lower than the standard price, the transaction was marked as discounted.</p>
+                    <p>Example: Regular price of Item 1: $3</p>
+                    <p>Customer purchased 10 units for $10 → $1 per unit</p>
+                    <p>Since $1 < $3, the transaction was flagged as having a discount applied.</p>
+
+                    <div class="python">
+                        <img src="images/LookupPython.jpg">
+                    </div> 
+                    <br>
+                    <h4> Solve for Column Item:</h4>
+                    <p>A reverse lookup dictionary was then created to fill the null values of column Item. If an item’s price matched a known unit price, the correct Item name was assigned. </p>
+                    
+                    <div class="python">
+                        <img src="images/ReverseLookupPython.jpg">
+                    </div> 
+                </div>
+    
+                <div class="expandable">
+                    <h4>
+                        Exploratory SQL Queries
+                        <button class="expand-btn" onclick="toggleContent(this)">+</button>
+                    </h4>
+                    <div class="content" style="display:none;">
+                        <p> Schema: </p>
+                        <div class="SQL">
+                            <img src="images/Schema.jpg">
+
+                        <p> Data Segemntation:</p>
+                            <img src="images/CustomerSeg.jpg">
+
+                        <p> Performace: </p>
+                            <img src="images/ProductYearlyPerformance.jpg">
+                            <img src="images/TotalSales.jpg">    
+                    </div> 
+
+                    </div>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(button) {
+            const content = button.closest('.expandable').querySelector('.content');
+            const box = document.querySelector('.p1homesquare');
+
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                button.textContent = "–";
+
+                const newHeight = box.scrollHeight + content.scrollHeight - 300; 
+            } else {
+                content.style.display = "none";
+                button.textContent = "+";
+            }
+        }
+    </script>
+
+    <script src="index.js"></script>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
